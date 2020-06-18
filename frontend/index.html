@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title> URL-Shortening Service </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="frontend.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Short.ly</h1>
+
+        <ol>
+            <li>
+                Enter URL:
+            </li>
+            <li class="input">
+                 <!-- supported formats: http://, https://, www. -->
+                <input type="text" size="100px" id="user-input" placeholder="www.example.com" /> 
+            </li>
+            <li class="btn">
+                <button id="submit-btn">Shorten</button>
+            </li>
+            <li class="btn">
+                <button id="copy-btn" hidden>Copy to Clipboard</button>
+            </li>
+            <li class="output">
+                <a href="localhost:8080/" id="output-link" hidden>bitlyclone.com/</a>
+            </li>
+            <li id="copy-response" class="output" hidden>
+                Link Copied!
+            </li>
+            <li id="invalid-response" hidden>
+                Please check your link and try again!
+            </li>
+        </ol>
+
+    </div>
+
+    <textarea hidden id="copy-field"></textarea>
+</body>
+
+</html>
