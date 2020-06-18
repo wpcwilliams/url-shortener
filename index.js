@@ -28,5 +28,5 @@ app.use((req, res) => {
 });
 
 app.listen(config.PORT, () => {
-  console.log(`Server listening on port ${PORT}\n\n`);
+  console.log(`Server listening on port ${config.PORT}\n\n`);
 });
